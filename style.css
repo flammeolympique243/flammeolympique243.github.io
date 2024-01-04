@@ -1,0 +1,52 @@
+body {
+    font-family: 'Akshar', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.title-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    position: relative;
+}
+
+.background {
+    opacity: 15%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(assets/background.png);
+    background-repeat: no-repeat;
+}
+
+.background img {
+    width: 100%;
+}
+
+.title {
+    font-size: 80px;
+}
+
+.hashtag {
+
+}
+
+.logo-container{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 80%;
+}

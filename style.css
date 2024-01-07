@@ -8,7 +8,7 @@ body {
     font-weight: 600;
 }
 
-.title-container {
+.page-container {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,34 +19,88 @@ body {
 }
 
 .background {
-    opacity: 15%;
+    opacity: 35%;
     background-size: cover;
     background-position: center;
     height: 100vh;
     overflow: hidden;
-    background-image: url(assets/background.png);
+    background-image: url(assets/favicon/background.png);
     background-repeat: no-repeat;
 }
+
 
 .background img {
     width: 100%;
 }
 
-.title {
-    font-size: 80px;
-}
-
-.hashtag {
-
-}
-
-.logo-container{
+.main-container{
     width: 100%;
+    height: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.content-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    background-color: #1d1d1bff;
+    height: 243px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.footer,h1 {
+    font-size: 30px;
 }
 
 #logo {
-    width: 80%;
+    width: 90%;
+}
+
+#instagram {
+    width: 122px;
+    margin-top: 42px;
+}
+
+@media only screen and (min-width: 500px) {
+    /* For tablets: */
+    #instagram {
+        width: 120px;
+        margin-top: 32px;
+    }
+    #logo {
+        width: 80%;
+    }
+    .footer {
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    /* For tablets: */
+    #instagram {
+        width: 100px;
+        margin-top: 20px;
+    }
+    #logo {
+        width: 77%;
+    }
+
+    .footer {
+        height: 100px;
+    }
 }

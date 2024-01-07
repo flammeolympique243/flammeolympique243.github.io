@@ -64,7 +64,7 @@ body {
 }
 
 .footer,h1 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #logo {
@@ -74,9 +74,14 @@ body {
 #instagram {
     width: 122px;
     margin-top: 42px;
+    transition: transform 0.3s ease;
 }
 
-@media only screen and (min-width: 500px) {
+#instagram:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 500px) {
     /* For tablets: */
     #instagram {
         width: 120px;
@@ -88,19 +93,18 @@ body {
     .footer {
         height: 100px;
     }
+    .footer,h1 {
+        font-size: 30px;
+    }
 }
 
-@media only screen and (min-width: 760px) {
+@media (min-width: 760px) {
     /* For tablets: */
     #instagram {
         width: 100px;
         margin-top: 20px;
     }
     #logo {
-        width: 77%;
-    }
-
-    .footer {
-        height: 100px;
+        width: 70%;
     }
 }

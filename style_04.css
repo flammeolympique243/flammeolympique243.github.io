@@ -77,7 +77,7 @@ body {
 }
 
 #instagram {
-    width: 100px;
+    width: 50px;
     margin-top: 20px;
     transition: transform 0.3s ease;
     -webkit-user-select: none; /* Safari */
@@ -100,11 +100,17 @@ body {
     .footer,h1 {
         font-size: 30px;
     }
+    #instagram {
+        width: 70px;
+    }
 }
 
 @media (min-width: 760px) {
     /* For tablets: */
     #logo {
         width: 70%;
+    }
+    #instagram {
+        width: 100px;
     }
 }

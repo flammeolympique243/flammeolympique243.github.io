@@ -31,6 +31,9 @@ body {
 
 .background img {
     width: 100%;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .main-container{
@@ -55,7 +58,6 @@ body {
 
 .footer {
     background-color: #1d1d1bff;
-    height: 243px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,17 +66,23 @@ body {
 }
 
 .footer,h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #logo {
     width: 90%;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 #instagram {
-    width: 122px;
-    margin-top: 42px;
+    width: 100px;
+    margin-top: 20px;
     transition: transform 0.3s ease;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 #instagram:hover {
@@ -83,10 +91,6 @@ body {
 
 @media (min-width: 500px) {
     /* For tablets: */
-    #instagram {
-        width: 120px;
-        margin-top: 32px;
-    }
     #logo {
         width: 80%;
     }
@@ -100,10 +104,6 @@ body {
 
 @media (min-width: 760px) {
     /* For tablets: */
-    #instagram {
-        width: 100px;
-        margin-top: 20px;
-    }
     #logo {
         width: 70%;
     }
